@@ -34,12 +34,12 @@
                 <li><p ><U>REDES SOCIALES:</U>  <a href="https://www.instagram.com/mauriciopairetti?utm_source=qr&igsh=enQwbzF4ZW9sbTNk" target="_blank"> has clic aqui</a></p></li>
             </ul>
         </div>
-        <DIV>
+        <div>
         <h3><b style="background-color: rgb(229, 245, 12);"></b> </b><strong>EXPERIENCIA LABORAL</strong></h3>
             <ol>
                 <li><p ><U>PRODUTOR Y MUSICO:</U> musico y productor banda musical <a href="https://www.instagram.com/cuatro_60" target="_blank"> has clic aqui</a></p></li>
                     <p><I>Ultima produccion musical en la formacion musical CINCO SENTIDOS ↓</I></p>
-                <audio controls  >
+                <audio controls autoplay >
                     <source src="/audio/Cinco Sentidos - Intransigente (MP3).mp3" type="audio/mp3">
                     
                 </audio>
@@ -51,7 +51,7 @@
         </div>
 
         <div>
-        <h3><b style="background-color: rgb(229, 245, 12);"></b> </b><strong>OBJETIVOS PERSONALES</strong></h3>
+         <h3><b style="background-color: rgb(229, 245, 12);"></b> </b><strong>OBJETIVOS PERSONALES</strong></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                 Totam quia exercitationem consectetur non quisquam id maxime <br>
                 velit praesentium molestiae quae eligendi ab nostrum nesciunt, <br>
@@ -60,37 +60,48 @@
         </div> 
     <hr>
         <form action="">
-        <h4>Inicie sesion o registrece <a href="http://wwww.noexistepagina.com" target="_blank" rel="noopener noreferrer">aqui </a></h4>
+         <h4>Inicie sesion o registrece <a href="http://wwww.noexistepagina.com" target="_blank" rel="noopener noreferrer">aqui </a></h4>
+            
+        
             <p>
-             <label for="nom">Nombre:</label>
-             <input type="text" name="nombre" placeholder="Nombre" id=""/>
+             <label for="email">Mail: </label>
+             <input type="email" id="email" size="tamaño"  placeholder ="escribe aqui tu mail" name="email" required>
             </p>
             <p>
-             <label for="nom">Apellido:</label>
-             <input type="text" name="apellido" placeholder="Apellido" id=""/>
+              <label for="usuario">Usuario:</label>
+              <input type="text" name="usuario" placeholder="escribe aqui tu usuario" id="usuario"pattern="[A-Za-z]{9}"/>
+              <small>(debe contener 9 caracteres MAYUSCULAS y minisculas)</small>
+            </p>
+            <p>
+             <label for="nom">Nombre:</label>
+             <input type="text" name="nom" placeholder="escribe aqui tu Nombre" id="nom"/>
+            </p>
+            <p>
+             <label for="ape">Apellido:</label>
+             <input type="text" name="ape" placeholder="escribe aqui tu Apellido" id="ape"/>
             </p>
             <p>
              <label for="pass">Contraseña:</label>
              <input type="password" name="pass" id="">
             </p>         
-        </form>
-    <hr>    
-        <DIV>
-        <h3>ADJUNTE SU CV EN FORMATO PDF</h3>
+        
+            <hr>    
+         <div>
+          <h3>ADJUNTE SU CV EN FORMATO PDF</h3>
             <p>
               <label for="comentario"> Enviar Sugerencia</label>
               <textarea name="comentario" id="" cols="30" rows="10"></textarea>
             </p>    
             <p>
-              <input type="submit" value="Enviar">
-              <input type="reset" value="Borrar">
-              <input type="file" value="Adjuntar"><br>
-              <input type="checkbox" name="condiciones" checked="checked" /> Acepto las condiciones<br />
-              
-           </p>
-        </DIV>
+              <input type="submit" value="Enviar"/>
+              <input type="reset" value="Borrar"/>
+              <input type="file" value="Adjuntar" multiple/>
+              <br>
+              <input type="checkbox" name="condiciones" checked="checked" /> Acepto las condiciones>
+            </p>
+         </div>
 
-        
+        </form> 
     </body>
 
 </html>
